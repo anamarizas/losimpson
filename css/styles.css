@@ -13,3 +13,12 @@ h1{
     
 
 }
+audio{
+    width: 200px;
+    border-radius: 100px;
+    transform: scale(1.05);
+ }
+ p{
+    color: azure;
+ }
+ 

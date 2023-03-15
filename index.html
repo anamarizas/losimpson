@@ -12,13 +12,14 @@
   />
   </head>
   <body>
-    <div class="container">
+    <!--Navbar-->
+    <header class="container">
         <div class="row">
             <div class="col-12"  >
-                <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+                <nav class="navbar navbar-expand-lg bg-body-tertiary" href="#inicio">
                     <div class="container-fluid">
                       <a class="navbar-brand" href="#">
-                        <img src="assets/logo.webp" width="100px">
+                        <img src="assets/logo.webp" width="100px" id="#navbar">
                       </a>
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -26,7 +27,7 @@
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                           <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="#">Contáctanos</a>
@@ -36,12 +37,12 @@
                               Personajes
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Homero</a></li>
-                              <li><a class="dropdown-item" href="#">Marge</a></li>
+                              <li><a class="dropdown-item" href="#homero">Homero</a></li>
+                              <li><a class="dropdown-item" href="#marge">Marge</a></li>
                               <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Lisa</a></li>
-                              <li><a class="dropdown-item" href="#">Bart</a></li>
-                              <li><a class="dropdown-item" href="#">Maggie</a></li>
+                              <li><a class="dropdown-item" href="#lisa">Lisa</a></li>
+                              <li><a class="dropdown-item" href="#bart">Bart</a></li>
+                              <li><a class="dropdown-item" href="#maggie">Maggie</a></li>
                             </ul>
                           </li>
                         </ul>
@@ -53,8 +54,9 @@
                     </div>
                   </nav>
             </div>
-            <div class="col-12">
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <!--Carrusel-->
+            <div class="col-12" >
+                <div id="carouselExampleAutoplaying"  class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img src="assets/familia.webp" class="d-block w-100" alt="..." height="800px" width="1000px">
@@ -82,75 +84,111 @@
                     </button>
                   </div>
             </div>
+            <ul></ul>
+            <ul></ul>
+            <!--Homero-->
             <div class="col-6">
-                <img src="assets/homero.webp" class="animate__animated animate__backInLeft  alt=" height="500px" width="500px">
+                <img src="assets/homero.webp" class="animate__animated animate__backInLeft  alt=" id="homero" justify-right height="500px" width="600px">
             </div>
             <div class="col-6">
-                <img src="assets/homerobailando.gif" class="animate__animated animate__backInRight   alt=" height="500px" width="500px">
+                <img src="assets/homerobailando.gif" class="animate__animated animate__backInRight   alt=" height="500px" width="635px">
             </div>
             <div class="col-12">
-                <h1>Homero</h1>
-                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, dolore repellendus, architecto vero commodi dolor nemo, odit dignissimos provident nihil odio animi sapiente reprehenderit quod ipsum iure adipisci illum. Aut?</p>
+                <h1 class="animate__animated animate__heartBeat">Homero</h1>
+                <p> Homero es una sátira de los norteamericanos promedio, en palabras de su mismo creador Matt Groening. Las bromas indirectas se pueden encontrar en su personalidad, su actitud, su filosofía, su idiosincrasia, etc. Los rasgos esenciales de la personalidad de Homer se presentaron desde sus inicios. No se sabe bien donde nació, pero pudo haber sido en Springfield. Después de los 11 años fue criado únicamente por su padre Abraham Simpson, ya que su madre tuvo que huir de la justicia por paralizar los negocios del Sr. Burns.</p>
                 <div class="d-grid gap-2 d-md-block">
-                    <button class="btn btn-primary" type="button">Button</button>
-                    <button class="btn btn-primary" type="button">Button</button>
+                    <button class="btn btn-primary" type="button">Anterior</button>
+                    <button class="btn btn-primary" type="button">Siguiente</button>
                   </div>
             </div>
             <ul></ul>
+            <!--Marge-->
             <div class="col-4">
-                <img src="assets/margesimpsonbailando.gif" alt="" height="500px" width="500px">
+                <img src="assets/margesimpsonbailando.gif" id="marge" alt=""  class="animate__animated animate__backInLeft"      height="100%" width="430px">
             </div>
-            <div class="col-4 d-flex text-center">
-                <h1>Marge</h1>
-                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, dolore repellendus, architecto vero commodi dolor nemo, odit dignissimos provident nihil odio animi sapiente reprehenderit quod ipsum iure adipisci illum. Aut?</p>
-            </div>
-            <div class="col-4">
-                <img src="assets/marge.jpg" alt="" height="500px" width="500px">
-                <div class="d-grid gap-2 d-md-block">
-                    <button class="btn btn-primary" type="button">Button</button>
-                    <button class="btn btn-primary" type="button">Button</button>
-                  </div>
-            </div>
-            <ul></ul>
-            <div class="col-6">
-                <img src="assets/bartsolo.jpg" alt="" height="500px" width="500px">
-            </div>
-            <div class="col-6">
-                <h1>Bart</h1>
-                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, dolore repellendus, architecto vero commodi dolor nemo, odit dignissimos provident nihil odio animi sapiente reprehenderit quod ipsum iure adipisci illum. Aut?</p>
-                <div class="d-grid gap-2 d-md-block">
-                    <button class="btn btn-primary" type="button">Button</button>
-                    <button class="btn btn-primary" type="button">Button</button>
-                  </div>
-            </div>
-            <ul></ul>
-            <div class="col-6">
-                <img src="assets/lisa.webp" alt="" height="500px" width="500px">
-            </div>
-            <div class="col-6">
-                <h1>Lisa</h1>
-                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, dolore repellendus, architecto vero commodi dolor nemo, odit dignissimos provident nihil odio animi sapiente reprehenderit quod ipsum iure adipisci illum. Aut?</p>
-                <div class="d-grid gap-2 d-md-block">
-                    <button class="btn btn-primary" type="button">Button</button>
-                    <button class="btn btn-primary" type="button">Button</button>
-                  </div>
-            </div>
-            <ul></ul>
-            <div class="col-6">
-                <img src="assets/maggiel.webp" alt="" height="500px" width="500px">
-            </div>
-            <div class="col-6">
-                <h1>Maggie</h1>
-                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, dolore repellendus, architecto vero commodi dolor nemo, odit dignissimos provident nihil odio animi sapiente reprehenderit quod ipsum iure adipisci illum. Aut?</p>
-                <div class="d-grid gap-2 d-md-block">
-                    <button class="btn btn-primary" type="button">Button</button>
-                    <button class="btn btn-primary" type="button">Button</button>
-                  </div>
-            </div>
-        </div>
-        </div>
-    </div>
+            <div class="col-4 ">
+                <h1 class="animate__animated animate__heartBeat">Marge</h1>
+                <p>  Marjorie Jaqueline —como su madre— Bouvier Simpson (eternamente, 37 años) en realidad es un conejo. 
+                <p> Así se ideó desde un principio, pero no deberíamos saberlo hasta el final de la primera temporada.</p>
 
+                 <p> Esa fue la idea original del padre de ‘Los Simpson’, Matt Groening, y la razón del estrambótico peinado de Marge: se trataba de ocultar sus largas orejas para dar la sorpresa en el último capítulo de su primera etapa. Esto explica que el personaje en el videojuego ‘The Simpsons Arcade’ de 1991 revelara unas larguísimas orejas bajo su inconfundible moño azul.</p>
+              <div class="d-grid gap-2 d-md-block">
+                  <button class="btn btn-primary" type="button">Anterior</button>
+                  <button class="btn btn-primary" type="button">Siguiente</button>
+              </div>
+            </div>
+            <div class="col-4">
+                <img src="assets/marge.jpg" alt="" class="animate__animated animate__backInRight"  height="500px" width="415px">
+                <ul></ul>
+            <!--Bart-->
+            </div>
+            <ul></ul>
+            <div class="col-6">
+                <img src="assets/bartsolo.jpg" alt="" class="animate__animated animate__backInLeft" id="bart"   height="500px" width="430px">
+            </div>
+            <div class="col-6">
+                <h1 class="animate__animated animate__heartBeat">Bart</h1>
+                <p > Es el hijo mayor de Homer y Marge Simpson. En relación a su edad, este personaje tiene 10 años y estudia en la escuela primaria de Springfield, siendo conocido por sus travesuras y su habilidad para andar en patinete, y su habilidad innata para meterse en problemas, él mismo, y a la gente de su alrededor.</p>
+
+                 <p> Hablando de sus cualidades y características, Bart representa el estereotipo de chico rebelde que quiere hacer lo que le plazca, el cual no tiene mucho gusto por la escuela, y por lo tanto obtiene malas calificaciones. Su compañero de travesuras y mejor amigo es Milhouse, y la frase favorita de Bart es, ¡ay caramba!</p>
+                <div class="d-grid gap-2 d-md-block">
+                    <button class="btn btn-primary" type="button">Anterior</button>
+                    <button class="btn btn-primary" type="button">Siguiente</button>
+                  </div>
+            </div>
+            <ul></ul>
+            <!--Lisa-->
+            <div class="col-6">
+                <img src="assets/lisa.webp" id="lisa" alt="" class="animate__animated animate__backInLeft" height="500px" width="430px">
+            </div>
+            <div class="col-6">
+                <h1 class="animate__animated animate__heartBeat">Lisa</h1>
+                <p> Lisa es la hija mediana de la familia Simpson. Se caracteriza de los demás personajes de su familia porque es superdotada. A parte otro rasgo que la caracteriza es que es vegetariana, ecologista, activista y budista (a nadie de su familia le gustan estas cosas)</p>
+                 <p>En cuanto a su aficiones, le encanta las actividades voluntarias, la naturaleza, ir al colegio y leer. También, le encanta el jazz, y cuando era pequeña, su padre le compró un saxofón. En cambio, con las actividades físicas, frecuentemente saca malas notas y no suele practicarlas. A Lisa, le encantan los animales, sobretodo los ponis que siempre ha querido tener uno.</p>
+                  
+                <p>Normalmente siempre se pelea con su hermano Bart al que a veces no puede ni verlo, pero finalmente se demuestra que ambos se quieren. Aunque en muchos capítulos se enfada con su padre, siempre  termina  reconciliándose.</p>
+
+                <ul></ul>
+                <ul></ul>
+                <div class="d-grid gap-2 d-md-block">
+                    <button class="btn btn-primary" type="button">Anterior</button>
+                    <button class="btn btn-primary" type="button">Siguiente</button>
+                  </div>
+            </div>
+            <ul></ul>
+            <!--Maggie-->
+            <div class="col-6">
+                <img src="assets/maggiel.webp" class="animate__animated animate__backInLeft" id="maggie" alt="" height="500px" width="430px">
+            </div>
+            <div class="col-6">
+                <h1 class="animate__animated animate__heartBeat">Maggie</h1>
+                <p> Maggie representa el papel de un bebé desatendido en una familia disfuncional, que ha tenido que desarrollar una forzada autosuficiencia. De todas maneras, como bebé, siente un gran apego por su madre, en contraste con su padre, quien le presta muy poca atención, llegando a olvidar que existe. </p> 
+                <p> Esto también refleja los roles domésticos que desempeñan los padres en la familia. Maggie es impresionable e influenciable por lo que le rodea, cosa que junto a su destreza la volvió peligrosa, llegando a golpear con un martillo a su padre en imitación a los dibujos Itchy & Scratchy. Maggie también encarna a veces un rol paralelo al de Lisa, el de bebé con grandes posibilidades para el futuro, pero limitada por la situación económica de su familia y la subestimación que recibe por parte de la misma. </p>
+
+                 <p> Debido a su desatención familiar, a Maggie se la muestra bastante autosuficiente en las escenas en las que está sola. Gracias a ello, Maggie ha salvado de situaciones de vida o muerte a sus hermanos y a su padre, es capaz de prepararse el biberón, imitar los bailes de Britney Spears y organizar motines contra adultos.</p>
+                <div class="d-grid gap-2 d-md-block">
+                    <button class="btn btn-primary" type="button">Anterior</button>
+                    <button class="btn btn-primary" type="button">Siguiente</button>
+                  </div>
+            </div>
+        </div>
+        </div>
+        <ul></ul>
+        <ul></ul>
+        <!--Patas-->
+        <footer class="col-12">
+          <img src="assets/Springfield_panoramic.webp" alt=""  width="1300px" >
+        </footer>
+        <footer class="col-12" >
+          <ul></ul>
+          <audio preload="autoplay" src="assets/lossimpson.mp4" controls></audio>
+          <button class="btn btn-primary" type="button" id="inicio" >Inicio</button>
+          <p> Instagram </p>
+          <p> Twitter </p>
+          <p> Página oficial </p>
+        </footer>
+      </header>
+      
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
