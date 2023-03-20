@@ -9,12 +9,13 @@ body{
 
 h1{
     color: #ffd90f;
-    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 
 }
 audio{
-    width: 200px;
+    width: 100px;
+    height: 20px;
     border-radius: 100px;
     transform: scale(1.05);
  }
